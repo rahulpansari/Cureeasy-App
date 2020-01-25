@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MyProfile">
+
+    <include
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="300dp" />
+
+    <EditText
+        android:id="@+id/medit_pname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:drawableLeft="@drawable/usericon"
+        android:drawableStart="@drawable/usericon"
+        android:drawablePadding="5dp"
+        android:layout_margin="15dp"
+        android:inputType="textPersonName"
+        android:hint=" Name" />
+    <EditText
+        android:id="@+id/medit_pmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_margin="15dp"
+        android:drawableLeft="@drawable/mailicon"
+        android:drawableStart="@drawable/mailicon"
+        android:drawablePadding="5dp"
+        android:inputType="textEmailAddress"
+        android:hint=" Email" />
+    <EditText
+        android:id="@+id/medit_pmobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_margin="15dp"
+        android:drawableLeft="@drawable/mobile"
+        android:drawableStart="@drawable/mobile"
+        android:drawablePadding="5dp"
+        android:inputType="phone"
+        android:maxEms="10"
+        android:hint=" Mobile No" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/bg"
+        android:layout_margin="10dp"
+        android:text="Submit"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+</LinearLayout>
+</ScrollView>

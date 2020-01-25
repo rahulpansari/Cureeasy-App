@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<LinearLayout
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/edit_pname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:drawableLeft="@drawable/usericon"
+        android:drawableStart="@drawable/usericon"
+        android:drawablePadding="5dp"
+        android:layout_margin="5dp"
+        android:inputType="textPersonName"
+        android:hint=" Patient Name" />
+    <EditText
+        android:id="@+id/edit_pmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_margin="5dp"
+        android:drawableLeft="@drawable/mailicon"
+        android:drawableStart="@drawable/mailicon"
+        android:drawablePadding="5dp"
+        android:inputType="textEmailAddress"
+        android:hint=" Patient Email" />
+    <EditText
+        android:id="@+id/edit_dname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_margin="5dp"
+        android:drawableLeft="@drawable/dricon"
+        android:drawableStart="@drawable/dricon"
+        android:drawablePadding="5dp"
+        android:inputType="textPersonName"
+        android:hint="Dr Name" />
+    <EditText
+        android:id="@+id/edit_prescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_margin="5dp"
+        android:drawableLeft="@drawable/prescriptionicon"
+        android:drawableStart="@drawable/prescriptionicon"
+        android:drawablePadding="5dp"
+        android:lines="5"
+        android:inputType="textPersonName"
+        android:hint="Prescription" />
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        app:cardElevation="10dp"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="10dp"
+        android:layout_height="wrap_content" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <EditText
+                android:id="@+id/edit_medicine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_margin="5dp"
+                android:drawableLeft="@drawable/pill"
+                android:drawableStart="@drawable/pill"
+                android:drawablePadding="5dp"
+                android:lines="5"
+                android:inputType="textPersonName"
+                android:hint="Medicine Name" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <EditText
+                    android:id="@+id/edit_qty"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:layout_margin="5dp"
+                    android:layout_weight="0.5"
+                    android:drawablePadding="5dp"
+                    android:inputType="number"
+                    android:hint="Qty" />
+                <EditText
+                    android:id="@+id/edit_days"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:layout_margin="5dp"
+                    android:layout_weight="0.5"
+                    android:drawablePadding="5dp"
+                    android:inputType="number"
+                    android:hint="Days" />
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/cb_blunch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Before Lunch" />
+
+            <CheckBox
+                android:id="@+id/cb_alunch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="After Lunch" />
+
+            <CheckBox
+                android:id="@+id/cb_bdinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Before Dinner" />
+
+            <CheckBox
+                android:id="@+id/cb_adinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="After Dinner" />
+
+            <TextView
+                android:id="@+id/add_medicine"
+                android:layout_width="wrap_content"
+                android:layout_gravity="end"
+                android:padding="5dp"
+                android:layout_height="wrap_content"
+                android:text="+ADD MEDICINE" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/prescription_recycler"
+        android:layout_width="match_parent"
+        android:layout_weight="0.95"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/add_pres_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg"
+        android:layout_weight="0.05"
+        android:text="Submit"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+</LinearLayout>
+</LinearLayout>
+</ScrollView>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1B998C</color>
+    <color name="colorPrimaryDark">#1B998C</color>
+    <color name="colorAccent">#1B998C</color>
+    <color name="bg">#2BBFA9</color>
+    <color name="active">#00FF00</color>
+<color name="tile1">#B53737</color>
+    <color name="tile2">#54b948</color>
+    <color name="tile3">#1261A0</color>
+    <color name="tile4">#810541</color>
+    <color name="tile5">#800080</color>
+</resources>

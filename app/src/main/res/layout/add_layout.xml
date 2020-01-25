@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        app:cardElevation="10dp"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="10dp"
+        android:layout_height="wrap_content" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/edit_medicine"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_margin="5dp"
+                android:drawablePadding="5dp"
+                android:hint="Medicine Name" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/edit_qty"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:layout_margin="5dp"
+                   android:layout_weight="0.5"
+                    android:drawablePadding="5dp"
+                    android:hint="Qty" />
+                <TextView
+                    android:id="@+id/edit_days"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:layout_margin="5dp"
+                    android:layout_weight="0.5"
+                    android:drawablePadding="5dp"
+                    android:hint="Days" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/edit_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_margin="5dp"
+                android:layout_weight="0.5"
+                android:drawablePadding="5dp"
+                android:hint="Timing" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

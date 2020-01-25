@@ -1,0 +1,64 @@
+{
+  "project_info": {
+    "project_number": "436662286519",
+    "firebase_url": "https://cureeasy-8be0f.firebaseio.com",
+    "project_id": "cureeasy-8be0f",
+    "storage_bucket": "cureeasy-8be0f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:436662286519:android:a1ee428614e7e18a",
+        "android_client_info": {
+          "package_name": "com.example.cureeasy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "436662286519-imabak231riialtkup77k9mov3bgsl6o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.cureeasy",
+            "certificate_hash": "b7497f07a89171896b9c734cbb915eaa861ef36e"
+          }
+        },
+        {
+          "client_id": "436662286519-m1o37a9unrrdk674ha1533asjedrsoak.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.cureeasy",
+            "certificate_hash": "1958c7115bcbb2b0e98f5407c1f7e318c1aad06c"
+          }
+        },
+        {
+          "client_id": "436662286519-d9ot95dviosq9j3fhpab3oi19c4nble8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.cureeasy",
+            "certificate_hash": "585560f59249e71e6c346c5bb32c6613e4abbd75"
+          }
+        },
+        {
+          "client_id": "436662286519-n6jmt4omavhd5np7nd83bll0s8uovfov.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_zX5SaqMhRWQc1bE5PtBtpQieJ2Fuzlo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "436662286519-n6jmt4omavhd5np7nd83bll0s8uovfov.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

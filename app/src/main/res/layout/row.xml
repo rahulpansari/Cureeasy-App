@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:contentPadding="8dp"
+        app:cardBackgroundColor="@color/bg"
+        app:cardCornerRadius="3dp"
+        app:cardElevation="3dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/patient"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="Patient Name"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/disease"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                tools:text="Disease"
+                android:layout_below="@id/patient"/>
+
+            <TextView
+                android:id="@+id/rect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                tools:text="Recommended Treatment"
+                android:layout_below="@id/disease"/>
+
+            <TextView
+                android:id="@+id/prevt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                tools:text="Previous Treatment"
+                android:layout_below="@id/rect"/>
+
+            <TextView
+                android:id="@+id/apps"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                tools:text="Application Status"
+                android:layout_below="@id/prevt"/>
+
+            <TextView
+                android:id="@+id/clinic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                tools:text="Clinic Name"
+                android:layout_below="@id/apps"/>
+
+            <TextView
+                android:id="@+id/ins"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                tools:text="Insurance"
+                android:layout_below="@id/clinic"/>
+
+            <TextView
+                android:id="@+id/bill"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                tools:text="Billing Details"
+                android:layout_below="@id/ins"/>
+            <TextView
+                android:id="@+id/doct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Doctor"
+                android:textStyle="bold|italic"
+                android:layout_alignParentRight="true"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:layout_below="@id/ins"/>
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
